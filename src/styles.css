@@ -13,8 +13,9 @@
   padding: 20px 0px 20px 0px;
 }
 
-.list-unstyled {
+.list-unstyled li {
   display:inline;
+  margin-right: 2rem;
 }
 
 .icons {
