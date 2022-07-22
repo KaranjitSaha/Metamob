@@ -15,8 +15,10 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "4.0.0",
+    "react-slick": "^0.29.0",
     "react-strap": "^0.0.1",
-    "reactstrap": "^9.1.2"
+    "reactstrap": "^9.1.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
