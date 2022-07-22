@@ -1,0 +1,15 @@
+import "./styles.css";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from 'react-router-dom';
+import Main from './Components/MainComponent';
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <Main />
+      </div>
+    </BrowserRouter>
+  );
+}

@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.navbar-dark {
+  background-color: black;
+}
+
+.footer {
+  background-color:black;
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.list-unstyled {
+  display:inline;
+}
+
+.icons {
+  color: white;
+}
