@@ -1,23 +1,13 @@
-/* IMPORTING MODULES */
+/* IMPORTING ELEMENTS */
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Card from './Card';
 
 /* IMPORTING CSS */
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles.css";
-
-/* IMPORTING DATA FILES  */
-
-
-
-function Card(item) {
-    return <div key={item.id} >
-        <img src={item.src.default} alt={item.alt} ></img>
-        <h1>{item.title}</h1>
-    </div>
-}
 
 class Carousel extends Component {
     constructor(props) {
