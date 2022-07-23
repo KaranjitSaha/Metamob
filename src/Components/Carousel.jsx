@@ -7,25 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles.css";
-// import '../../
-const images = [{
-    id: 1,
-    title: "Stop the amazon massacre",
-    src: require("../assets/images/IMG_1232.JPG"),
-    alt: "photo1",
-},
-{
-    id: 2,
-    title: "Restore the rain forest in Brazil",
-    src: require("../assets/images/IMG_20220313_082123.jpg"),
-    alt: "Image 2 "
-},
-    {
-        id: 3,
-        src: require("../assets/images/png-transparent-multicolored-balloons-illustration-balloon-balloon-free-balloons-easter-egg-desktop-wallpaper-party-thumbnail.png"),
-        alt: "Image 3"
-    }
-];
+
+/* IMPORTING DATA FILES  */
+import images from "../data/images";
+
 
 function Card(item) {
     return <div key={item.id}>
@@ -52,21 +37,7 @@ export default function Carousel() {
             </div>
             <div className="imgslider">
                 <Slider {...settings}>
-                    {/* <div>
-                        <img src={"logo192.png"} />
-                        <h1>Stop the amazon massacre</h1>
-                    </div>
-                    <div>
-                        <img src={require("./png-transparent-multicolored-balloons-illustration-balloon-balloon-free-balloons-easter-egg-desktop-wallpaper-party-thumbnail.png").default} />
-                        <h1>Stop the amazon massacre</h1>
-                    </div>
-                    <div>
-                        <img src={require("./IMG_1232.JPG").default} />
-                        <h1>Stop the amazon massacre</h1>
-                    </div> */}
-                    
                     {images.map(Card)}
-
                 </Slider>
             </div>
         </>
