@@ -29,7 +29,7 @@ class Carousel extends Component {
             <>
                 <div className="imgslider">
                     <Slider {...settings}>
-                        {this.props.images.map(Card)}
+                        {this.props.images.map(item=><Card item={item}/>)}
                     </Slider>
                 </div>
             </>
