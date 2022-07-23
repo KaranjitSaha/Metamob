@@ -9,12 +9,12 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles.css";
 
 /* IMPORTING DATA FILES  */
-import images from "../data/images";
+
 
 
 function Card(item) {
-    return <div key={item.id}>
-        <img src={item.src.default} alt={item.alt}></img>
+    return <div key={item.id} >
+        <img src={item.src.default} alt={item.alt} ></img>
         <h1>{item.title}</h1>
     </div>
 }
@@ -32,7 +32,7 @@ class Carousel extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 500, // TODO:Increase autoplaySpeed later
 
         };
         return (

@@ -12,6 +12,7 @@ const images = [{
 },
     {
         id: 3,
+        title:"Save life on Earth",
         src: require("../assets/images/balloons.png"),
         alt: "Image 3"
     }

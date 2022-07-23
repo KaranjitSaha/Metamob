@@ -14,13 +14,13 @@ class Home extends Component {
                         <Button className="btn" color="primary">Explore</Button>
                         <Button className="btn" color="secondary">Create</Button>
                     </div>
-                    <div className="col-12 col-sm-6">
+                    <div className="col-12 col-sm-6" style={{ width: "2rem",height:"2rem" }}>
                         <Carousel images={this.props.images}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="container">
-                        <div className="row justify-content-center">
+                        <div className="row justify-content-center" style={{marginTop:"15rem"}}>
                             <h3><strong>Create and participate in campaigns</strong></h3>
                         </div>
                         <div className="row">
