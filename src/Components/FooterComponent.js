@@ -11,15 +11,13 @@ class Footer extends Component {
                         <div className="col-4 col-sm-12 ">
                             <ul className="list-unstyled">
                                 <li style={{ display: "inline" }}><Link to='/home'>Home</Link></li>
-                                <li style={{ display: "inline" }}><Link to='/aboutus'>About</Link></li>
-                                <li style={{ display: "inline" }}><Link to='/menu'>Menu</Link></li>
-                                <li style={{ display: "inline" }}><Link to='/contactus'>Contact Us</Link></li>
+                                <li style={{ display: "inline" }}><Link to='/places'>Places</Link></li>
+                                <li style={{ display: "inline" }}><Link to='/campaigns'>Campaigns</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="row justify-content-center ">
                         <div className="text-center " style={{flex:'center'}} >
-                            <a className="btn btn-social-icon btn-google" href="http://google.com/+"><i className="fa fa-google-plus icons"></i></a>
                             <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i className="fa fa-facebook icons"></i></a>
                             <a className="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i className="fa fa-linkedin icons"></i></a>
                             <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter icons"></i></a>

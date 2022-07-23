@@ -11,17 +11,17 @@ class Header extends Component {
         </NavbarBrand>
         <Nav navbar>
           <NavItem>
-            <NavLink className="nav-link" to="#">
+            <NavLink className="nav-link" to="/home">
               Home
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="#">
+            <NavLink className="nav-link" to="/places">
               Places
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="#">
+            <NavLink className="nav-link" to="/campaigns">
               Campaigns
             </NavLink>
           </NavItem>
@@ -29,7 +29,7 @@ class Header extends Component {
         <Nav className="ml-auto" navbar>
           <NavItem>
               <Button outline color="warning">
-                  Login
+                <span className="fa fa-user"></span> Login
               </Button>
           </NavItem>
         </Nav>
