@@ -12,7 +12,7 @@ const images = [{
 },
     {
         id: 3,
-        src: require("../assets/images/png-transparent-multicolored-balloons-illustration-balloon-balloon-free-balloons-easter-egg-desktop-wallpaper-party-thumbnail.png"),
+        src: require("../assets/images/balloons.png"),
         alt: "Image 3"
     }
 ];

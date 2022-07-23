@@ -18,11 +18,11 @@ class Footer extends Component {
                     </div>
                     <div className="row justify-content-center ">
                         <div className="text-center " style={{flex:'center'}} >
-                            <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i className="fa fa-facebook icons"></i></a>
-                            <a className="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i className="fa fa-linkedin icons"></i></a>
-                            <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter icons"></i></a>
-                            <a className="btn btn-social-icon btn-google" href="http://youtube.com/"><i className="fa fa-youtube icons"></i></a>
-                            <a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o icons"></i></a>
+                        <a className="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i className="fa fa-lg fa-instagram fa-border icons"></i></a>
+                            <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i className="fa fa-lg fa-facebook fa-border icons"></i></a>
+                            <a className="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i className="fa fa-lg fa-linkedin fa-border icons"></i></a>
+                            <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-lg fa-twitter fa-border icons"></i></a>
+                            <a className="btn btn-social-icon" href="mailto:"><i className="fa fa-lg fa-envelope-o fa-border icons"></i></a>
                         </div>
                     </div>
                 </div>

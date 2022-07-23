@@ -1,5 +1,5 @@
 /* IMPORTING MODULES */
-import React from "react";
+import React, { Component } from "react";
 import Slider from "react-slick";
 
 /* IMPORTING CSS */
@@ -19,28 +19,32 @@ function Card(item) {
     </div>
 }
 
-export default function Carousel() {
-    const settings = {
-        infinite: true,
-        dots: true,
-        fade: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
+class Carousel extends Component {
+    constructor(props) {
+        super(props);
+    }
+    
+    render() {
+        const settings = {
+            infinite: true,
+            dots: true,
+            fade: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
 
-    };
-    return (
-        <>
-            <div className="tag">
-                <h1>Image Gallery</h1>
-            </div>
-            <div className="imgslider">
-                <Slider {...settings}>
-                    {images.map(Card)}
-                </Slider>
-            </div>
-        </>
-    );
+        };
+        return (
+            <>
+                <div className="imgslider">
+                    <Slider {...settings}>
+                        {this.props.images.map(Card)}
+                    </Slider>
+                </div>
+            </>
+        );
+    }
 }
 
+export default Carousel;
