@@ -20,7 +20,7 @@ class Home extends Component {
                 </div>
                 <div className="row">
                     <div className="container">
-                        <div className="row justify-content-center" style={{marginTop:"15rem"}}>
+                        <div className="row justify-content-center" style={{marginTop:"15rem", marginBottom:"1rem"}}>
                             <h3><strong>Create and participate in campaigns</strong></h3>
                         </div>
                         <div className="row">
@@ -44,7 +44,7 @@ class Home extends Component {
                                 <p>Depending on the campaign, you can sign, donate, vote and fund them. You can also open reports about any abusive content and get a reward in metamob tokens (MMT) if they are accepted!</p>
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row" style={{marginTop: "2rem"}}>
                             <div className="col-12">
                                 <h3><strong>Together we can change the world! One campaign at a time.</strong></h3>
                             </div>
