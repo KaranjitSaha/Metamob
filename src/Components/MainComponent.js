@@ -21,7 +21,7 @@ class Main extends Component {
             <div> 
                 <Header />
                 <Routes>
-                    <Route path="/home" element={<Home images={this.state.imaArr}/>} />
+                    <Route path="/" element={<Home images={this.state.imaArr}/>} />
                     <Route path="/places" element={<Places />} />
                     <Route path="/campaigns" element={<Campaigns />} />
                 </Routes>

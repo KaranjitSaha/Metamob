@@ -21,7 +21,7 @@ function showCard(item, index) {
 
 function TableRow(props) {
     return (
-        <div className='col' height="700rem" width="400rem">
+        <div className='col-12 col-md-6' height="700rem" width="400rem">
             <Card item={props.item}/>
         </div>
     );
@@ -59,7 +59,7 @@ class Campaigns extends Component {
                     <div className="col-12 col-sm-1">
                         <Button className="btn btn-success"><span className="fa fa-search"></span></Button>
                     </div>
-                    <div className="col-12 col-sm-2 offset-11">
+                    <div className="col-12 col-sm-2 offset-md-11">
                         <Button className="btn btn-success"><span className="fa fa-plus"></span> Create</Button>
                     </div>
                 </div>
