@@ -3,13 +3,12 @@
   text-align: center;
 }
 
-.row-header {
-  margin: 100px 0px 100px 0px;
-  text-align: left;
-}
-
 .btn {
   margin: 5px;
+}
+
+.content {
+  padding: 20px 0px 50px 0px;
 }
 
 .fa {
@@ -37,10 +36,6 @@
   background-color: red;
 }
 
-.content {
-  padding: 20px 0px 50px 0px;
-}
-
 .navbar-dark {
   background-color: black;
 }
@@ -49,6 +44,11 @@
   background-color: black;
   /* margin:100px 0px 0px 0px; */
   padding: 20px 0px 20px 0px;
+  margin-top: 3rem;
+}
+
+.icons {
+  color: white;
 }
 
 .list-unstyled li {
@@ -56,8 +56,9 @@
   padding: 15px;
 }
 
-.icons {
-  color: white;
+.row-header {
+  margin: 100px 0px 100px 0px;
+  text-align: left;
 }
 
 .slick-slide img {
