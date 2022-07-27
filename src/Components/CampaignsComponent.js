@@ -15,7 +15,7 @@ function Table(props) {
 
 function TableRow(props) {
     return (
-        <div className='col-12 col-md-6' height="700rem" width="400rem">
+        <div className='col-12 col-md-6'>
             <Card item={props.item}/>
         </div>
     );
