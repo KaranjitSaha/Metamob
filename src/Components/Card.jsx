@@ -15,7 +15,7 @@ export default function CardDisplay(props) {
         //     <img src={props.item.src.default} alt={props.item.alt} height="400rem" width="534rem" style={{borderRadius:"10px"}}></img>
         //     <h1>{props.item.title}</h1>
         // </div>
-        <Card style={{borderWidth: "5px", borderColor: "grey", marginBottom: "30px", borderStyle: "outset"}}>
+        <Card className="shadow-sm p-3 mb-5 bg-white rounded">
             <CardImg src={props.item.src.default} alt={props.item.alt} style={{height: "30rem"}}/>
             <CardBody>
                 <CardTitle><h3>{props.item.title}</h3></CardTitle>
