@@ -6,7 +6,7 @@ import Places from './PlacesComponent';
 import Campaigns from './CampaignsComponent';
 import { Routes, Route } from 'react-router-dom';
 import images from '../data/images';
-
+import Create from './Create';
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -19,13 +19,14 @@ class Main extends Component {
     render() {
         return (
             <div> 
-                <Header />
+                {/* <Header />
                 <Routes>
                     <Route path="/" element={<Home images={this.state.imaArr}/>} />
                     <Route path="/places" element={<Places />} />
                     <Route path="/campaigns" element={<Campaigns />} />
                 </Routes>
-                <Footer />
+                <Footer /> */}
+                <Create/>
             </div>
         );
     }
