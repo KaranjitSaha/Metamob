@@ -8,8 +8,11 @@ class Header extends Component {
     this.state = {
       isNavOpen: false,
       walletAddress:"",
+      loginStatus: false,
+      currentStatus: "LogIn"
     };
     this.toggleNav = this.toggleNav.bind(this);
+    this.statusChange = this.statusChange.bind(this);
   }
 
   toggleNav() {
@@ -24,23 +27,48 @@ class Header extends Component {
     });
   }
 
+  statusChange() {
+    if(this.state.loginStatus) {
+      alert("Logged out successfully");
+      this.setState({
+        loginStatus: false,
+        currentStatus: "LogIn"
+      });
+    }
+    else {
+      alert("Logged in successfully");
+      this.setState({
+        loginStatus: true,
+        currentStatus: "Logout"
+      });
+    }
+  }
+
   requestAccount = async () => {
-    console.log("Requesting account...");
-  //Check if Meta Mask Extension exists
-    if (window.ethereum) {
-      console.log('detected');
-      try {
-        const accounts = await window.ethereum.request({
-          method: "eth_requestAccounts",
-        });
-        this.setWalletAddress(accounts[0]);
-        console.log(accounts[0]);
-      } catch(error){
-        console.log("Error connecting...");
-        console.log(error);
+    if(!this.state.loginStatus) {
+      console.log("Requesting account...");
+      //Check if Meta Mask Extension exists
+      if (window.ethereum) {
+        console.log('detected');
+        try {
+          const accounts = await window.ethereum.request({
+            method: "eth_requestAccounts",
+          });
+          this.setWalletAddress(accounts[0]);
+          console.log(accounts[0]);
+          this.statusChange();
+          console.log(this.state.loginStatus);
+        } catch(error){
+          console.log("Error connecting...");
+          console.log(error);
+        }
+      } else {
+        alert("Meta Mask not detected");
       }
     } else {
-      alert("Meta Mask not detected");
+      console.log("Removing account...");
+      this.setWalletAddress("");
+      this.statusChange();
     }
   }
 
@@ -72,9 +100,8 @@ render() {
         <Nav className="ml-auto" navbar>
           <NavItem>
             <Button outline color="warning" onClick={this.requestAccount}>
-              <span className="fa fa-user"></span> Login
+              <span className="fa fa-user"></span> {this.state.currentStatus}
             </Button>
-            <h3 style={{color:"white"}}>{this.state.walletAddress}</h3>
           </NavItem>
         </Nav>
       </Collapse>

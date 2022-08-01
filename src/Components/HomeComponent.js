@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import Carousel from './Carousel';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
@@ -11,7 +12,7 @@ class Home extends Component {
                     <div className="col-12 col-sm-6">
                         <h1>Create, donate, vote, sign and fund extraordinary mobilizations!</h1>
                         <p>Metamob is a decentralized web3 app, running on the -----, that lets any user start mobilizations by creating campaigns</p>
-                        <Button className="btn" color="primary">Explore</Button>
+                        <Link to="/campaigns"><Button className="btn" color="primary">Explore</Button></Link>
                         <Button className="btn" color="secondary">Create</Button>
                     </div>
                     <div className="col-12 col-sm-6">
